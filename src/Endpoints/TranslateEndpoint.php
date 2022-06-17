@@ -38,7 +38,8 @@ class TranslateEndpoint extends EndpointAbstract
         $text,
         $to = TranslateType::LANG_EN,
         $from = TranslateType::LANG_AUTO,
-        $options = []
+        $options = [],
+        $filters = []
     ) {
         $params = [
             'text'        => $text,
@@ -49,6 +50,6 @@ class TranslateEndpoint extends EndpointAbstract
             $params['source_lang'] = $from;
         }
 
-        return $this->getRequest(null, array_merge($options, $params), true);
+        return $this->getRequest(null, array_merge($options, $params),$filters, true);
     }
 }
