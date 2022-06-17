@@ -179,13 +179,12 @@ class DeepLApiClient
         }
 
         $headers = [
-            'Accept' => 'application/x-www-form-urlencoded',
-            //            'Authorization' => "Bearer {$this->apiKey}",
+            'Accept' => 'application/json',
+            'Content-type'=> 'application/x-www-form-urlencoded'
         ];
 
-        $request = new Request($httpMethod, $url, $headers, $httpBody);
-
         try {
+            $request = new Request($httpMethod, $url, $headers, $httpBody);
             $response = $this->httpClient->send($request, ['http_errors' => false]);
         } catch (GuzzleException $e) {
             throw ApiException::createFromGuzzleException($e);

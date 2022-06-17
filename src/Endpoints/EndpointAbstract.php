@@ -51,7 +51,7 @@ abstract class EndpointAbstract
      */
     protected function getRequest($path = null, $body=[], $filters = [], $reponseIsCollection = false)
     {
-        $result = $this->client->performHttpCall(self::REST_CREATE, rtrim("{$this->getResourcePath()}/{$path}", '/'). $this->buildQueryString($filters), $body);
+        $result = $this->client->performHttpCall(self::REST_CREATE, rtrim("{$this->getResourcePath()}/{$path}", '/'). $this->buildQueryString($filters),  http_build_query($body,'', '&' ));
 
         if ($reponseIsCollection) {
             $resultCopy = $result;
