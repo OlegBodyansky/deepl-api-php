@@ -1,12 +1,12 @@
 <?php
 
-namespace JorisvanW\DeepL\Api\Endpoints;
+namespace OlegBodyansky\DeepL\Api\Endpoints;
 
-use JorisvanW\DeepL\Api\DeepLApiClient;
-use JorisvanW\DeepL\Api\Resources\BaseResource;
-use JorisvanW\DeepL\Api\Exceptions\ApiException;
-use JorisvanW\DeepL\Api\Resources\BaseCollection;
-use JorisvanW\DeepL\Api\Resources\ResourceFactory;
+use OlegBodyansky\DeepL\Api\DeepLApiClient;
+use OlegBodyansky\DeepL\Api\Resources\BaseResource;
+use OlegBodyansky\DeepL\Api\Exceptions\ApiException;
+use OlegBodyansky\DeepL\Api\Resources\BaseCollection;
+use OlegBodyansky\DeepL\Api\Resources\ResourceFactory;
 
 abstract class EndpointAbstract
 {
@@ -47,7 +47,7 @@ abstract class EndpointAbstract
      * @param bool        $reponseIsCollection
      *
      * @return BaseResource|BaseCollection
-     * @throws \JorisvanW\DeepL\Api\Exceptions\ApiException
+     * @throws \OlegBodyansky\DeepL\Api\Exceptions\ApiException
      */
     protected function getRequest($path = null, $body=[], $filters = [], $reponseIsCollection = false)
     {
@@ -70,7 +70,7 @@ abstract class EndpointAbstract
      * @param array $filters
      *
      * @return string
-     * @throws \JorisvanW\DeepL\Api\Exceptions\ApiException
+     * @throws \OlegBodyansky\DeepL\Api\Exceptions\ApiException
      */
     private function buildQueryString(array $filters)
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace JorisvanW\DeepL\Api\Endpoints;
+namespace OlegBodyansky\DeepL\Api\Endpoints;
 
-use JorisvanW\DeepL\Api\Resources\Usage;
+use OlegBodyansky\DeepL\Api\Resources\Usage;
 
 class UsageEndpoint extends EndpointAbstract
 {
@@ -16,8 +16,8 @@ class UsageEndpoint extends EndpointAbstract
     /**
      * Get the usage.
      *
-     * @return \JorisvanW\DeepL\Api\Resources\BaseResource|\JorisvanW\DeepL\Api\Resources\Usage
-     * @throws \JorisvanW\DeepL\Api\Exceptions\ApiException
+     * @return \OlegBodyansky\DeepL\Api\Resources\BaseResource|\OlegBodyansky\DeepL\Api\Resources\Usage
+     * @throws \OlegBodyansky\DeepL\Api\Exceptions\ApiException
      */
     public function get()
     {

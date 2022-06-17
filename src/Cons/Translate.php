@@ -1,6 +1,6 @@
 <?php
 
-namespace JorisvanW\DeepL\Api\Cons;
+namespace OlegBodyansky\DeepL\Api\Cons;
 
 class Translate
 {

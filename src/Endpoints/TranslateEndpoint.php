@@ -1,9 +1,9 @@
 <?php
 
-namespace JorisvanW\DeepL\Api\Endpoints;
+namespace OlegBodyansky\DeepL\Api\Endpoints;
 
-use JorisvanW\DeepL\Api\Resources\Translate;
-use JorisvanW\DeepL\Api\Cons\Translate as TranslateType;
+use OlegBodyansky\DeepL\Api\Resources\Translate;
+use OlegBodyansky\DeepL\Api\Cons\Translate as TranslateType;
 
 class TranslateEndpoint extends EndpointAbstract
 {
@@ -31,8 +31,8 @@ class TranslateEndpoint extends EndpointAbstract
      * @param string $from
      * @param array  $options
      *
-     * @return \JorisvanW\DeepL\Api\Resources\BaseResource|\JorisvanW\DeepL\Api\Resources\TranslateCollection
-     * @throws \JorisvanW\DeepL\Api\Exceptions\ApiException
+     * @return \OlegBodyansky\DeepL\Api\Resources\BaseResource|\OlegBodyansky\DeepL\Api\Resources\TranslateCollection
+     * @throws \OlegBodyansky\DeepL\Api\Exceptions\ApiException
      */
     public function translate(
         $text,

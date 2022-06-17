@@ -1,5 +1,5 @@
 {
-    "name": "jorisvanw/deepl-api-php",
+    "name": "olegbodyansky/deepl-api-php-post",
     "description": "DeepL API PHP client library for the DeepL.com translation API.",
     "keywords": [
         "deepl",
@@ -13,12 +13,12 @@
         "german",
         "french"
     ],
-    "homepage": "https://github.com/JorisvanW/deepl-api-php",
+    "homepage": "https://github.com/OlegBodyansky/deepl-api-php",
     "license": "MIT",
     "authors": [
         {
-            "name": "Joris v. Willigen",
-            "email": "me@jorisvanw.me"
+            "name": "Oleg Bodyansky",
+            "email": "oleg.bodyansky@gmail.com"
         }
     ],
     "require": {
@@ -33,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "JorisvanW\\DeepL\\Api\\": "src/"
+            "OlegBodyansky\\DeepL\\Api\\": "src/"
         }
     },
     "scripts": {

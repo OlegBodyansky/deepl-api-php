@@ -1,8 +1,8 @@
 <?php
 
-namespace JorisvanW\DeepL\Api\Resources;
+namespace OlegBodyansky\DeepL\Api\Resources;
 
-use JorisvanW\DeepL\Api\DeepLApiClient;
+use OlegBodyansky\DeepL\Api\DeepLApiClient;
 
 abstract class BaseResource
 {

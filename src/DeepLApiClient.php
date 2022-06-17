@@ -1,6 +1,6 @@
 <?php
 
-namespace JorisvanW\DeepL\Api;
+namespace OlegBodyansky\DeepL\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
@@ -8,9 +8,9 @@ use GuzzleHttp\ClientInterface;
 use Psr\Http\Message\StreamInterface;
 use Psr\Http\Message\ResponseInterface;
 use GuzzleHttp\Exception\GuzzleException;
-use JorisvanW\DeepL\Api\Exceptions\ApiException;
-use JorisvanW\DeepL\Api\Endpoints\UsageEndpoint;
-use JorisvanW\DeepL\Api\Endpoints\TranslateEndpoint;
+use OlegBodyansky\DeepL\Api\Exceptions\ApiException;
+use OlegBodyansky\DeepL\Api\Endpoints\UsageEndpoint;
+use OlegBodyansky\DeepL\Api\Endpoints\TranslateEndpoint;
 
 class DeepLApiClient
 {

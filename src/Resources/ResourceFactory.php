@@ -1,6 +1,6 @@
 <?php
 
-namespace JorisvanW\DeepL\Api\Resources;
+namespace OlegBodyansky\DeepL\Api\Resources;
 
 class ResourceFactory
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace JorisvanW\DeepL\Api\Exceptions;
+namespace OlegBodyansky\DeepL\Api\Exceptions;
 
 use Throwable;
 use GuzzleHttp\Psr7\Response;
@@ -29,7 +29,7 @@ class ApiException extends \Exception
      * @param \GuzzleHttp\Psr7\Response|null $response
      * @param \Throwable|null                $previous
      *
-     * @throws \JorisvanW\DeepL\Api\Exceptions\ApiException
+     * @throws \OlegBodyansky\DeepL\Api\Exceptions\ApiException
      */
     public function __construct(
         $message = '',
@@ -62,8 +62,8 @@ class ApiException extends \Exception
      * @param \GuzzleHttp\Exception\RequestException $guzzleException
      * @param \Throwable                             $previous
      *
-     * @return \JorisvanW\DeepL\Api\Exceptions\ApiException
-     * @throws \JorisvanW\DeepL\Api\Exceptions\ApiException
+     * @return \OlegBodyansky\DeepL\Api\Exceptions\ApiException
+     * @throws \OlegBodyansky\DeepL\Api\Exceptions\ApiException
      */
     public static function createFromGuzzleException($guzzleException, Throwable $previous = null)
     {
@@ -81,8 +81,8 @@ class ApiException extends \Exception
      * @param \Psr\Http\Message\ResponseInterface $response
      * @param \Throwable|null                     $previous
      *
-     * @return \JorisvanW\DeepL\Api\Exceptions\ApiException
-     * @throws \JorisvanW\DeepL\Api\Exceptions\ApiException
+     * @return \OlegBodyansky\DeepL\Api\Exceptions\ApiException
+     * @throws \OlegBodyansky\DeepL\Api\Exceptions\ApiException
      */
     public static function createFromResponse($response, Throwable $previous = null)
     {
@@ -130,7 +130,7 @@ class ApiException extends \Exception
      * @param $response
      *
      * @return mixed
-     * @throws \JorisvanW\DeepL\Api\Exceptions\ApiException
+     * @throws \OlegBodyansky\DeepL\Api\Exceptions\ApiException
      */
     protected static function parseResponseBody($response)
     {
