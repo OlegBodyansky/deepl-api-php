@@ -179,7 +179,7 @@ class DeepLApiClient
         }
 
         $headers = [
-            'Accept' => 'application/json',
+            'Accept' => 'application/x-www-form-urlencoded',
             //            'Authorization' => "Bearer {$this->apiKey}",
         ];
 

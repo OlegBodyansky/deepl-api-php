@@ -49,9 +49,9 @@ abstract class EndpointAbstract
      * @return BaseResource|BaseCollection
      * @throws \JorisvanW\DeepL\Api\Exceptions\ApiException
      */
-    protected function getRequest($path = null, $params = [], $reponseIsCollection = false)
+    protected function getRequest($path = null, $body=[], $filters = [], $reponseIsCollection = false)
     {
-        $result = $this->client->performHttpCall(self::REST_READ, rtrim("{$this->getResourcePath()}/{$path}", '/') . $this->buildQueryString($params));
+        $result = $this->client->performHttpCall(self::REST_CREATE, rtrim("{$this->getResourcePath()}/{$path}", '/'). $this->buildQueryString($filters), $body);
 
         if ($reponseIsCollection) {
             $resultCopy = $result;
